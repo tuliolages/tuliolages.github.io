@@ -8,7 +8,7 @@ $( document ).ready(function() {
     var desktopBrowser = $("#desktop-browser");
     var unknownDevice = $("#unknown-device");
 
-    if (md.is('AndroidOS')) {
+    if (md.os() === 'AndroidOS') {
         androidDevice.show();
     } else if (md.is('iPhone')) {
         iphoneDevice.show();
